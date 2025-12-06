@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Seller - Flipkart</title>
+    <link rel="stylesheet" href="./flip.css">
+    <style>
+        .seller-container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .1);
+            text-align: center;
+        }
+
+        .seller-hero h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #2874f0;
+        }
+
+        .seller-hero p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .seller-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .seller-btn {
+            background-color: #fb641b;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="navbar-container">
+            <div class="logo-container">
+                <a href="./flip.html">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                        alt="Flipkart" class="logo-img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="seller-container">
+        <div class="seller-hero">
+            <h1>Sell Online with Flipkart</h1>
+            <p>Reach crores of customers across India</p>
+        </div>
+        <form class="seller-form"
+            onsubmit="event.preventDefault(); alert('Registration Successful! Welcome to Flipkart Seller Hub.'); window.location.href='./flip.html';">
+            <div class="input-group">
+                <input type="text" required placeholder="Enter Mobile Number">
+            </div>
+            <div class="input-group">
+                <input type="email" required placeholder="Enter Email ID">
+            </div>
+            <div class="input-group">
+                <input type="text" required placeholder="Enter GSTIN">
+            </div>
+            <button class="seller-btn">Start Selling</button>
+        </form>
+    </div>
+</body>
+
+</html>
