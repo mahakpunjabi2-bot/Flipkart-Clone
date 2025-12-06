@@ -1,0 +1,274 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background-color: #f1f3f6;
+    color: #212121;
+}
+
+/* Header/Navbar */
+header {
+    background-color: #2874f0;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .08);
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.brand-logo .plus-text {
+    color: #ffe500;
+    margin-right: 5px;
+}
+
+.travel-label {
+    font-size: 12px;
+    background-color: #fff;
+    color: #2874f0;
+    padding: 2px 6px;
+    border-radius: 2px;
+    font-weight: 600;
+    margin-left: 8px;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?q=80&w=2000&auto=format&fit=crop');
+    /* Lake with palm trees/houseboat vibe */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Darken bg slightly for text readability */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    width: 100%;
+    max-width: 1248px;
+    padding: 0 20px;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Flight Search Card */
+.search-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+    top: 40px;
+    /* Push it down a bit inside hero, or offset it */
+}
+
+.trip-type {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #212121;
+}
+
+.radio-group input[type="radio"] {
+    accent-color: #2874f0;
+    width: 18px;
+    height: 18px;
+}
+
+.search-inputs {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.input-field {
+    flex: 1;
+    min-width: 150px;
+    position: relative;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field:hover {
+    border-color: #212121;
+}
+
+.input-label {
+    font-size: 11px;
+    color: #878787;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.input-control {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #212121;
+    width: 100%;
+    font-weight: 500;
+    background: transparent;
+}
+
+.input-control::placeholder {
+    color: #c2c2c2;
+    font-weight: 400;
+}
+
+.search-btn {
+    background-color: #2874f0;
+    color: #fff;
+    border: none;
+    padding: 12px 40px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    align-self: flex-end;
+    /* Align with bottom of inputs */
+    height: 56px;
+    /* Match height of input containers roughly */
+}
+
+.search-btn:hover {
+    background-color: #1f64d4;
+}
+
+/* Offer Banner */
+.offer-banner {
+    background: linear-gradient(90deg, #ff5e5e, #d32f2f);
+    color: white;
+    padding: 16px 24px;
+    margin: 80px auto 20px;
+    /* Top margin accounts for the overlapping search card */
+    max-width: 1248px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.offer-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.offer-text p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.offer-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.generic-icon {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-inputs {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .search-card {
+        padding: 16px;
+        margin: 0 10px;
+        top: 20px;
+    }
+
+    .offer-banner {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+}
